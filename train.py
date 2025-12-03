@@ -2,10 +2,11 @@
 import os, sys
 from tqdm import tqdm
 import torch
-from dataset import XACLEDataset
-from model import XACLEAttentionModel, OrdinalFocalLoss
-from config import CONFIG
+from configs.config import CONFIG
+from data.dataset import XACLEDataset
+from models.xacle_model import XACLEAttentionModel
 from transformers import AutoProcessor
+
 
 # Add logger class here or import from utils.py
 
