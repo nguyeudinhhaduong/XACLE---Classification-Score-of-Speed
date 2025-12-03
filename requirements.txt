@@ -1,0 +1,9 @@
+torch
+torchaudio
+transformers
+peft
+scipy
+pandas
+tqdm
+numpy
+requests
