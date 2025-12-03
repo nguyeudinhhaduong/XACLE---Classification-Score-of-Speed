@@ -1,9 +1,23 @@
-# XACLE-AudioMOS: Audio Quality Prediction using Deep Learning
+This repository contains our neural network system developed for the XACLE Challenge, where our team achieved a Top-5 ranking on the official benchmark.
+The goal of this project is to automatically predict the Mean Opinion Score (MOS) of audio clips — a task traditionally performed by 2 to 4 human raters.
 
-This repository implements a neural network model to predict **Mean
-Opinion Score (MOS)** for audio clips using the **XACLE dataset**.\
-The model is trained on audio `.wav` files and textual descriptions,
-with MOS labels provided in CSV annotations.
+Our model takes two inputs:
+
+Raw audio (.wav)
+
+Human-written textual descriptions of the audio
+
+By jointly modeling both acoustic features and text semantics, the system is able to estimate perceptual audio quality with a high correlation to human judgments.
+
+The dataset used for training is the XACLE Dataset, which provides:
+
+Audio recordings
+
+Natural language captions
+
+MOS scores (individual + averaged annotations)
+
+This repository serves as the official implementation of our submission, including dataset handling, model architecture, training pipeline, and evaluation procedures.
 
 ------------------------------------------------------------------------
 
